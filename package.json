@@ -13,7 +13,8 @@
     "@lottiefiles/dotlottie-react": "^0.22.3",
     "lottie-react": "^3.1.2",
     "react": "^19.3.1",
-    "react-dom": "^19.3.1"
+    "react-dom": "^19.3.1",
+    "react-router-dom": "^7.18.7"
   },
   "devDependencies": {
     "@types/react": "^19.3.0",
