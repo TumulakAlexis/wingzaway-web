@@ -1,0 +1,21 @@
+:root {
+  --color-primary-dark: #006257;
+  --color-primary-teal: #00ae9b;
+  --color-bg: #ffffff;
+  --color-border: #8fa3a0;
+  --color-placeholder: #b5c2c0;
+  --color-text: #1e2d2b;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  min-height: 100vh;
+}

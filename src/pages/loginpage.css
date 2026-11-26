@@ -1,0 +1,282 @@
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  padding: 28px 56px;
+}
+
+
+.illustration-lottie {
+  width: 100%;
+  max-width: 560px;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 960px) {
+  .illustration-lottie {
+    max-width: 360px;
+  }
+}
+
+
+/* Top Header */
+.login-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+.brand-logo-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.brand-logo-img {
+  height: 44px;
+  width: auto;
+  max-width: 240px;
+  object-fit: contain;
+}
+
+.brand-tagline {
+  color: #006257;
+  font-size: 0.92rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+/* Main Split Layout */
+.login-main {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  align-items: center;
+  gap: 48px;
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 16px 0;
+}
+
+/* Left Illustration / dotLottie Area */
+.illustration-panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 480px;
+}
+
+.illustration-lottie {
+  width: 100%;
+  max-width: 620px;
+  height: 520px;
+  display: block;
+}
+
+/* Force DotLottieReact's internal wrapper and canvas to fill the sized container */
+.illustration-lottie > div,
+.illustration-lottie canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.illustration-img {
+  width: 100%;
+  max-width: 580px;
+  height: auto;
+  object-fit: contain;
+}
+
+.placeholder-fallback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed #00ae9b;
+  background-color: #f2fbfa;
+  color: #006257;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 16px;
+  text-align: center;
+  padding: 20px;
+}
+
+.placeholder-fallback--logo {
+  width: 210px;
+  height: 44px;
+  border-radius: 8px;
+}
+
+.placeholder-fallback--hero {
+  width: 100%;
+  max-width: 560px;
+  height: 460px;
+}
+
+/* Right Form Area */
+.form-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 390px;
+  margin: 0 auto;
+}
+
+.login-title {
+  color: #006257;
+  font-size: 1.85rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  margin-bottom: 4px;
+}
+
+.login-subtitle {
+  color: #00ae9b;
+  font-size: 1.05rem;
+  font-weight: 400;
+  margin-bottom: 28px;
+}
+
+.login-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.input-pill {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  height: 48px;
+  padding: 0 18px;
+  border: 1.5px solid #8fa3a0;
+  border-radius: 999px;
+  background-color: #ffffff;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.input-pill:focus-within {
+  border-color: #00ae9b;
+  box-shadow: 0 0 0 3px rgba(0, 174, 155, 0.14);
+}
+
+.input-icon {
+  width: 18px;
+  height: 18px;
+  color: #c5cecc;
+  flex-shrink: 0;
+}
+
+.input-pill input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 0.95rem;
+  color: #1e2d2b;
+  background: transparent;
+}
+
+.input-pill input::placeholder {
+  color: #b5c2c0;
+}
+
+.forgot-link-row {
+  text-align: center;
+  margin-top: 2px;
+}
+
+.forgot-link {
+  background: none;
+  border: none;
+  color: #006257;
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.forgot-link:hover {
+  text-decoration: underline;
+}
+
+.button-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 6px;
+}
+
+.btn-pill {
+  height: 42px;
+  border-radius: 999px;
+  font-size: 0.92rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.12s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+.btn-pill:active {
+  transform: scale(0.98);
+}
+
+.btn-primary {
+  background-color: #006257;
+  color: #ffffff;
+  border: 1.5px solid #006257;
+}
+
+.btn-primary:hover {
+  background-color: #004d44;
+  border-color: #004d44;
+}
+
+.btn-outline {
+  background-color: #ffffff;
+  color: #006257;
+  border: 1.5px solid #006257;
+}
+
+.btn-outline:hover {
+  background-color: rgba(0, 98, 87, 0.06);
+}
+
+.login-error {
+  color: #c62828;
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 960px) {
+  .login-page {
+    padding: 20px 24px;
+  }
+
+  .login-header {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+
+  .login-main {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .illustration-panel {
+    min-height: 280px;
+  }
+
+  .illustration-lottie {
+    max-width: 380px;
+    height: 300px;
+  }
+}
